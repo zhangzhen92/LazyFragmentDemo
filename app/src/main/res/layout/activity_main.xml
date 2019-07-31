@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_id"
+        app:layout_constraintBottom_toTopOf="@id/bottom_id"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_id"
+        android:background="#FFF"
+        app:menu="@menu/bottom_menu_item"
+        app:itemTextColor="@color/bottom_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></android.support.design.widget.BottomNavigationView>
+
+
+</android.support.constraint.ConstraintLayout>
